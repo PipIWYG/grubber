@@ -36,6 +36,7 @@ class UsersController extends Controller
     public function create()
     {
         //
+		return redirect('login');
     }
 
     /**
