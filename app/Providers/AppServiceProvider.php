@@ -1,9 +1,10 @@
 <?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use PipIWYG\GitFo\GitFo;
 
 class AppServiceProvider extends ServiceProvider {
-
+	
 	/**
 	 * Bootstrap any application services.
 	 *
@@ -11,7 +12,8 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
+		// Get Git Repo Info and share with all views
+		view()->share('repoInfo', (new GitFo())->info);
 	}
 
 	/**
