@@ -5099,7 +5099,7 @@ body {
 body.envlocal {
   background: #0D2335;
 }
-body.envstaging {
+body.envtest {
   background: #421E11;
 }
 body.envlive {
