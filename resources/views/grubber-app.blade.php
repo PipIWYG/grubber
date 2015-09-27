@@ -1,12 +1,17 @@
 
 @section('footer')
 	<div class="appRepoInfo">
+		<img src="https://poser.pugx.org/pipiwyg/grubber/downloads"/>
 		@if(isset($repoInfo) && !empty($repoInfo))
-			{{ $repoInfo->formatOutput() }}
+			<img src="https://poser.pugx.org/pipiwyg/grubber/v/stable"/>
+			<img src="https://poser.pugx.org/pipiwyg/grubber/v/unstable"/>
+			{{ $repoInfo->info["description"] }}
+			<img class="travis-build-image" src="https://travis-ci.org/PipIWYG/grubber.svg?branch=master"/>
+			{{ $repoInfo->info["branch"] }} | {{ $repoInfo->info["environment"] }}
+			<img src="https://poser.pugx.org/pipiwyg/grubber/license"/>
 		@else
 			Warning: No Repo Info Found
 		@endif
-		| <img class="travis-build-image" src="https://travis-ci.org/PipIWYG/grubber.svg?branch=master"/>
 	</div>
 @endsection
 
