@@ -33,5 +33,12 @@ Once the database tables have successfully been migrated, seed the database tabl
 $ php artisan db:seed
 ```
 
+Finally, configure your virtual host and set-up your web server environment, and head on to the url assigned to the application. Log in using the following credentials:
+
+```
+Username: admin@pip.co.za
+Password: N3wT0N
+```
+
 ### License
-Grubber is licensed under the MIT license. If you find something wrong with the code or think it could be improved, I welcome you to create an <a href="https://github.com/modestkdr/grubber/issues">issue</a> or submit a pull request!
+Grubber is licensed under the MIT license. If you find something wrong with the code or think it could be improved, I welcome you to create an <a href="https://github.com/PipIWYG/grubber/issues">issue</a> or submit a pull request!
