@@ -80,7 +80,11 @@
 @endsection
 
 @section('body-tag')
-    <body>
+	@if(isset($repoInfo) && !empty($repoInfo))
+		<body class="env{{ $repoInfo->environment() }}">
+	@else
+		<body>
+	@endif
 @endsection
 
 @section('html-head')

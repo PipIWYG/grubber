@@ -4906,10 +4906,6 @@ button.close {
 body, label, .checkbox label {
   font-weight: 300; }
 
-body {
-  background: #fff;
-  background: #262626; }
-
 a {
   color: #2185C5; }
   a:hover {
@@ -5093,5 +5089,20 @@ a {
   font-size: 0.9em;
   margin-top: 10px;
   color: #aaa;
+}
+
+
+body {
+  background: #fff;
+  background: #262626; }
+  
+body.envlocal {
+  background: #0D2335;
+}
+body.envstaging {
+  background: #421E11;
+}
+body.envlive {
+  background: #262626;
 }
 /*# sourceMappingURL=app.css.map */

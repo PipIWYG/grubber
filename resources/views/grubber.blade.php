@@ -5,6 +5,10 @@
 @endsection
 
 @section('body-tag')
-    <body>
+	@if(isset($repoInfo) && !empty($repoInfo))
+		<body class="env{{ $repoInfo->environment() }}">
+	@else
+		<body>
+	@endif
 	@include('nav.global.grubber-main')
 @endsection
