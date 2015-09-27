@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
             'fax_number' => '+27767496820',
             'mobile_number' => '+27767496820',
             'email' => 'admin@pip.co.za',
-            'password' => bcrypt('YCD1B1pa8eywOGu8gw0BM4UokXDoTNly'),
+            'password' => bcrypt('N3wT0N'),
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s"),
         ]);
