@@ -1,5 +1,5 @@
-### Scrumwala
-Your very own Scrum/Agile web app built with Laravel
+### Grubber
+An Agile web based application built with Laravel, based on the <a href="https://github.com/modestkdr/scrumwala">Scrumwala</a> project.
 
 ### Features
 * Create and manage projects with plan and work views
@@ -8,22 +8,12 @@ Your very own Scrum/Agile web app built with Laravel
 * Get reminders via email listing issues nearing deadline
 * Responsive UI, *thanks to Bootstrap*
 
-### Screenshots
-
-*Project: Plan View*
-![alt tag](https://raw.githubusercontent.com/modestkdr/Scrumwala/master/screenshots/project-plan-view.png)
-
-
-*Project: Work View*
-![alt tag](https://raw.githubusercontent.com/modestkdr/Scrumwala/master/screenshots/project-show-view.png)
-
 ### Install Instructions
-To install Scrumwala you can clone the repository:
+To install Grubber you can clone the repository:
 
 ```
-$ git clone https://github.com/modestkdr/scrumwala.git.
+$ git clone https://github.com/PipIWYG/grubber.git
 ```
-
 
 Next, enter the project's root directory and install the project dependencies:
 
