@@ -5128,5 +5128,13 @@ a {
 .project-plan .sprint-activate-form {
   display: none; }
 
-
+.footer {
+  color: #000;
+}
+.appRepoInfo {
+  text-align: right;
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #aaa;
+}
 /*# sourceMappingURL=app.css.map */

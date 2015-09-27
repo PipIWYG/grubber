@@ -1,3 +1,11 @@
+@section('footer')
+	<div class="appRepoInfo">
+		@if($repoInfo)
+			{{ $repoInfo["description"] }} | {{ $repoInfo["branch"] }}
+		@endif
+	</div>
+@endsection
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +37,9 @@
 	@yield('content')
 </div>
 <div class="container-fluid">
-	@yield('footer')
+	<div class="footer">
+		@yield('footer')
+	</div>
 </div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
