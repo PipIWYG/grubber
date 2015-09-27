@@ -1,6 +1,12 @@
 ### Grubber
 An Agile web based application built with Laravel, based on the <a href="https://github.com/modestkdr/scrumwala">Scrumwala</a> project.
 
+[![Build Status](https://travis-ci.org/PipIWYG/grubber.svg)](https://travis-ci.org/PipIWYG/grubber)
+[![Total Downloads](https://poser.pugx.org/pipiwyg/grubber/downloads)](https://packagist.org/packages/pipiwyg/grubber)
+[![Latest Stable Version](https://poser.pugx.org/pipiwyg/grubber/v/stable)](https://packagist.org/packages/pipiwyg/grubber)
+[![Latest Unstable Version](https://poser.pugx.org/pipiwyg/grubber/v/unstable)](https://packagist.org/packages/pipiwyg/grubber)
+[![License](https://poser.pugx.org/pipiwyg/grubber/license)](https://packagist.org/packages/pipiwyg/grubber)
+
 ### Features
 * Create and manage projects with plan and work views
 * Group issues in a project into sprints
