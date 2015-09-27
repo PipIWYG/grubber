@@ -5132,9 +5132,9 @@ a {
   color: #000;
 }
 .appRepoInfo {
-  text-align: right;
+  text-align: center;
   font-size: 0.9em;
   margin-top: 10px;
-  color: #aaa;
+  color: #555;
 }
 /*# sourceMappingURL=app.css.map */
