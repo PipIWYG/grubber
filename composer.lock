@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "36949ce474aa556f1f62f348d6487294",
-    "content-hash": "3f2961ec27716947f6007d2fb7ac189f",
+    "hash": "381b2ea83c9badc9a171960d99fa84a9",
+    "content-hash": "8ad8083b9816d6339d92c9c29fe12854",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1447,7 +1447,7 @@
         },
         {
             "name": "pipiwyg/gitfo",
-            "version": "dev-master",
+            "version": "0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PipIWYG/GitFo.git",
@@ -3509,9 +3509,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pipiwyg/gitfo": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
