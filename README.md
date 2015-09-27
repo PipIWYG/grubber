@@ -27,5 +27,11 @@ Next, configure your .env file (root directory) and database (config/database.ph
 $ php artisan migrate
 ```
 
+Once the database tables have successfully been migrated, seed the database tables to create the initial admin user for access to the system.
+
+```
+$ php artisan db:seed
+```
+
 ### License
-Scrumwala is licensed under the MIT license. If you find something wrong with the code or think it could be improved, I welcome you to create an <a href="https://github.com/modestkdr/scrumwala/issues">issue</a> or submit a pull request!
+Grubber is licensed under the MIT license. If you find something wrong with the code or think it could be improved, I welcome you to create an <a href="https://github.com/modestkdr/grubber/issues">issue</a> or submit a pull request!
