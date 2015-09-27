@@ -6,6 +6,7 @@
 		@else
 			Warning: No Repo Info Found
 		@endif
+		| <img class="travis-build-image" src="https://travis-ci.org/PipIWYG/grubber.svg?branch=master"/>
 	</div>
 @endsection
 

@@ -5105,4 +5105,9 @@ body.envtest {
 body.envlive {
   background: #262626;
 }
+.travis-build-image {
+  margin-left: 2px;
+  position: relative;
+  top: -2px;
+}
 /*# sourceMappingURL=app.css.map */
