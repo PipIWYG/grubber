@@ -1,4 +1,4 @@
-@extends('app')
+@extends('grubber-visitor')
 
 @section('content')
 <div class="container-fluid">
