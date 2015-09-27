@@ -1,7 +1,7 @@
 @section('footer')
 	<div class="appRepoInfo">
 		@if($repoInfo)
-			{{ $repoInfo["description"] }} | {{ $repoInfo["branch"] }}
+			{{ $repoInfo["description"] }} | {{ $repoInfo["branch"] }} | {{ $repoInfo["environment"] }}
 		@endif
 	</div>
 @endsection
