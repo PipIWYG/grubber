@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$repoInfo = new GitFo();
 		// Get Git Repo Info and share with all views
-		view()->share('repoInfo', $repoInfo->info);
+		view()->share('repoInfo', $repoInfo);
 	}
 
 	/**

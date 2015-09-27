@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "39a6a106860ad8bb33c94a45a9c844ec",
-    "content-hash": "c8d6895ca52847f6c4ea126fd1c3cf11",
+    "hash": "d17635c3cce2f3fd424624279e5b619f",
+    "content-hash": "8693fd713483f665934daa82053f6976",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1447,16 +1447,16 @@
         },
         {
             "name": "pipiwyg/gitfo",
-            "version": "0.2",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PipIWYG/GitFo.git",
-                "reference": "96cf702d72a032b350029287c3369ef95b5936d0"
+                "reference": "8fe63352e8a362667127feb18c2398036028ae8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PipIWYG/GitFo/zipball/96cf702d72a032b350029287c3369ef95b5936d0",
-                "reference": "96cf702d72a032b350029287c3369ef95b5936d0",
+                "url": "https://api.github.com/repos/PipIWYG/GitFo/zipball/8fe63352e8a362667127feb18c2398036028ae8b",
+                "reference": "8fe63352e8a362667127feb18c2398036028ae8b",
                 "shasum": ""
             },
             "require": {
@@ -1489,7 +1489,7 @@
                 "module",
                 "repository"
             ],
-            "time": "2015-09-27 07:37:00"
+            "time": "2015-09-27 09:22:59"
         },
         {
             "name": "psr/log",
