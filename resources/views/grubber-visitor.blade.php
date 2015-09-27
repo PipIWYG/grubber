@@ -1,10 +1,7 @@
 @section('footer')
 	<div class="appRepoInfo">
-		@if(isset($repoInfo) && !empty($repoInfo))
-			{{ $repoInfo["description"] }} | {{ $repoInfo["branch"] }} | {{ $repoInfo["environment"] }}
-		@else
-			Warning: No Repo Info Found
-		@endif
+		{{ $repoInfo["description"] }} | {{ $repoInfo["branch"] }} | {{ $repoInfo["environment"] }}
+		
 	</div>
 @endsection
 
