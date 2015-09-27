@@ -1451,16 +1451,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PipIWYG/GitFo.git",
-                "reference": "522473c756203c58b2965836403bed915aac6a24"
+                "reference": "3c82bfaa0605c46e0f7163e277efd0f62b69bb13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PipIWYG/GitFo/zipball/522473c756203c58b2965836403bed915aac6a24",
-                "reference": "522473c756203c58b2965836403bed915aac6a24",
+                "url": "https://api.github.com/repos/PipIWYG/GitFo/zipball/3c82bfaa0605c46e0f7163e277efd0f62b69bb13",
+                "reference": "3c82bfaa0605c46e0f7163e277efd0f62b69bb13",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=5.4"
             },
             "type": "library",
             "extra": {
@@ -1489,7 +1489,7 @@
                 "module",
                 "repository"
             ],
-            "time": "2015-09-27 05:26:55"
+            "time": "2015-09-27 05:43:39"
         },
         {
             "name": "psr/log",

@@ -14,6 +14,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{env('APP_NAME')}}</title>
 	
+	<link href="{{ asset('favicon.ico') }}" type="image/x-icon" rel="icon"/>
+    <link href="{{ asset('favicon.ico') }}" type="image/x-icon" rel="shortcut icon"/>
+	
 	<link href='//fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link href="{{ asset('/css/grubber.css') }}" rel="stylesheet">
