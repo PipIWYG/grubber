@@ -18,19 +18,43 @@ An Agile web based application built with Laravel, based on the <a href="https:/
 To install Grubber you can clone the repository:
 
 ```
-$ git clone https://github.com/PipIWYG/grubber.git
+git clone https://github.com/PipIWYG/grubber.git
 ```
 
 Next, enter the project's root directory and install the project dependencies:
 
 ```
-$ composer install
+composer install
+composer update
 ```
 
-Next, configure your .env file (root directory) and database (config/database.php). Subsequently, create the database and then run the migrations:
+Next, configure your .env file (root directory - you can copy the .env.example) and database (config/database.php). Subsequently, create the database and then run the migrations:
+
+#####MySQL
+```
+mysql -uroot -p
+```
 
 ```
-$ php artisan migrate
+mysql> CREATE SCHEMA grubber;
+Query OK, 1 row affected (0.00 sec)
+```
+```
+mysql> quit
+```
+
+#####.env
+```
+DB_HOST=localhost
+DB_DATABASE=grubber
+DB_USERNAME=yourdbusername
+DB_PASSWORD=yourdbpassword
+```
+
+Once configured as above, run the php artisan command to migrate the tables:
+
+```
+php artisan migrate
 ```
 
 Once the database tables have successfully been migrated, seed the database tables to create the initial admin user for access to the system.
@@ -42,7 +66,7 @@ $ php artisan db:seed
 Finally, configure your virtual host and set-up your web server environment, and head on to the url assigned to the application. Log in using the following credentials:
 
 ```
-Username: admin@pip.co.za
+Username: dummy@domain.com
 Password: N3wT0N
 ```
 
