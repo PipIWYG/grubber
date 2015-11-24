@@ -12,10 +12,7 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$repoInfo = new GitFo();
-		
-		// Get Git Repo Info and share with all views
-		view()->share('repoInfo', $repoInfo);
+		//
 	}
 
 	/**
