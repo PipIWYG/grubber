@@ -28,6 +28,39 @@ Route::get('home', 'HomeController@index');
 Route::get('profile', 'UsersController@profile');
 Route::get('settings', 'UsersController@settings');
 
+
+
+/**
+ * New Central API Route Groups
+ */
+Route::group([
+    'prefix' => 'api/v1',
+    'middleware' => 'api.v1'
+], function() {
+    
+    Route::match([
+        'get','post'
+    ],'{requestUri}/{id}',[
+        'as' => "default-resource",
+        'uses' => 'ApiController@requestDefaultResource'
+    ]);
+    
+    Route::match([
+        'get','post'
+    ],'{requestUri}',[
+        'as' => "default-resource",
+        'uses' => 'ApiController@requestDefaultResource'
+    ]);
+    
+    Route::match([
+        'get','post'
+    ],'/',[
+        'as' => "default",
+        'uses' => 'ApiController@requestDefaultResource'
+    ]);
+});
+
+
 /* Auth */
 Route::controllers([
 	'auth' => 'Auth\AuthController',
