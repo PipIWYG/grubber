@@ -40,23 +40,34 @@ Route::group([
     
     Route::match([
         'get','post'
+    ],'{requestUri}/{id}/{subRequestUri}/{subId}',[
+        'as' => "default-resource",
+        'uses' => 'ApiController@requestApiResource'
+    ]);
+    Route::match([
+        'get','post'
+    ],'{requestUri}/{id}/{subRequestUri}',[
+        'as' => "default-resource",
+        'uses' => 'ApiController@requestApiResource'
+    ]);
+    Route::match([
+        'get','post'
     ],'{requestUri}/{id}',[
         'as' => "default-resource",
-        'uses' => 'ApiController@requestDefaultResource'
+        'uses' => 'ApiController@requestApiResource'
     ]);
-    
     Route::match([
         'get','post'
     ],'{requestUri}',[
         'as' => "default-resource",
-        'uses' => 'ApiController@requestDefaultResource'
+        'uses' => 'ApiController@requestApiResource'
     ]);
     
     Route::match([
         'get','post'
     ],'/',[
         'as' => "default",
-        'uses' => 'ApiController@requestDefaultResource'
+        'uses' => 'ApiController@requestApiResource'
     ]);
 });
 

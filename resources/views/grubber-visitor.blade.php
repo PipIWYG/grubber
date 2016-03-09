@@ -5,8 +5,8 @@
 @endsection
 
 @section('body-tag')
-	@if(isset($repoInfo) && !empty($repoInfo))
-		<body class="env{{ $repoInfo->environment() }} visitor">
+	@if(!empty(env('APP_ENV')))
+		<body class="env{{ env('APP_ENV') }} visitor">
 	@else
 		<body class="visitor">
 	@endif

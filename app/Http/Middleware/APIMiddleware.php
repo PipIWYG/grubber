@@ -4,6 +4,7 @@ use Closure;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use App\Api;
 
 //use App\Libraries\JsonValidate;
 //use App\Libraries\JsonResponse;
@@ -16,6 +17,7 @@ class APIMiddleware
 		"127.0.0.1",
 	];
 	
+	
 	/**
 	 * Handle an incoming request.
 	 *
@@ -26,6 +28,23 @@ class APIMiddleware
 	 */
 	public function handle($request, Closure $next)
 	{
+		$route = request()->route();
+		$params = $route->parameters();
+		$paramNames = $route->parameterNames();
+		//dd(["route" => $route, "params" => $params, "paramNames" => $paramNames]);
+		
+		$routePath = "";
+		if (count($params) > 0)
+			$routePath = $params["requestUri"];
+		
+		//$routePath = $route->getUri();
+		//for($i = 0; $i < count($params); $i++) {
+		//	$paramName = $paramNames[$i];
+		//	$paramVal = $params[$paramName];
+		//	$routePath = preg_replace("/\{".$paramName."\}/", $paramVal, $routePath);
+		//	
+		//}
+		
 		if (!in_array(request()->ip(), $this->validHosts))
 			return ApiResponse::CreateResponse(ApiResponse::API_INVALID_HOST);
 		

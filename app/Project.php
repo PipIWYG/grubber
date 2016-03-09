@@ -50,6 +50,8 @@ class Project extends Model {
 	public function issues() {
 		return $this->hasMany('App\Issue');
 	}
+	
+	public $issues = null;
 
 	/**
 	 * Get issues that are active (not archived)
