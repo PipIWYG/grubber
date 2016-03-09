@@ -18,7 +18,7 @@
 </head>
 <body>
 @include('nav.global.top')
-Hello World
+
 <div class="container-fluid">
 	@yield('header')
 </div>
